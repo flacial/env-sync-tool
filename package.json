@@ -1,0 +1,40 @@
+{
+  "name": "env-sync-tool",
+  "version": "1.4.0",
+  "description": "CLI tool to synchronize .env and .env.example files",
+  "main": "dist/index.js",
+  "bin": {
+    "env-sync-tool": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flacial/env-sync-tool"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    "environment",
+    "sync",
+    "cli"
+  ],
+  "author": "Faisal flacial@protonmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flacial/env-sync-tool"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/yargs": "^17.0.33",
+    "dotenv": "^16.4.7",
+    "yargs": "^17.7.2"
+  }
+}
