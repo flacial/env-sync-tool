@@ -1,1 +1,1 @@
-export * from './src/env-sync-tool.ts'
+export * from "./src/env-sync-tool.ts";
