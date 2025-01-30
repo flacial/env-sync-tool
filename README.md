@@ -3,6 +3,8 @@
 [![NPM Version](https://img.shields.io/npm/v/env-sync-tool)](https://www.npmjs.com/package/env-sync-tool)
 [![License](https://img.shields.io/npm/l/env-sync-tool)](LICENSE)
 
+Find it on [NPM Marketplace](https://www.npmjs.com/package/env-sync-tool).
+
 **The tool**
 
 `env-sync-tool-tool` is a command-line tool to synchronize environment variables between `.env` and `.env.example` files. It helps ensure that your `.env.example` file is always up-to-date with the variables defined in your `.env` file whenever a teammate add new environment variables and forget to update `.env.example`.
