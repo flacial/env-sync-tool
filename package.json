@@ -1,9 +1,12 @@
 {
   "name": "env-sync-tool",
-  "version": "1.9.0",
+  "version": "2.0.0",
   "description": "CLI tool to synchronize .env and .env.example files",
-  "main": "./index.ts",
-  "bin": "./index",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "env-sync-tool": "./dist/index.js"
+  },
   "engines": {
     "node": ">=20.0.0"
   },
@@ -25,28 +28,27 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/bun": "latest",
-    "typescript": "^5.0.0"
+    "@types/node": "^22.12.0",
+    "@types/yargs": "^17.0.33",
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@types/yargs": "^17.0.33",
     "dotenv": "^16.4.7",
     "yargs": "^17.7.2"
   },
   "files": [
     "dist",
-    "src",
     "README.md",
-    "LICENSE",
-    "out"
+    "LICENSE"
   ],
   "scripts": {
-    "build:package": "bun build ./ --target node --outdir dist",
     "format": "biome format --write .",
     "lint": "biome lint --write .",
-    "compile": "bun build --compile ."
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
   }
 }
